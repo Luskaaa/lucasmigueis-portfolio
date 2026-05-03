@@ -1,4 +1,4 @@
-# lucasmigueis.com
+# www.lucasmigueis.com
 
 My personal site, deployed at [lucasmigueis.com](https://lucasmigueis.com).
 
