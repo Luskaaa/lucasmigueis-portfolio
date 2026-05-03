@@ -34,7 +34,7 @@
   "about": {
     "title": "Sobre mim",
     "subtitle": "INTRO",
-    "body": "Quatro anos a construir serviços para o governo português, usados por milhões de pessoas. Trabalho em Next.js, TypeScript, .NET e React Native. Movo-me entre código e design, e lidero a equipa tecnicamente quando não há mais ninguém para o fazer.",
+    "body": "Quatro anos a construir serviços para o governo português, usados por milhões de pessoas. Trabalho em Next.js, TypeScript, .NET e React Native. Movo-me entre código e design, e assumo a liderança técnica da equipa quando o trabalho exige.",
     "portraitLabel": "retrato · 4:5",
     "portraitAlt": "Foto de {name}",
     "stats": {
@@ -92,15 +92,15 @@
         },
         "caseStudy": {
           "role": "Desenvolvedor Backend",
-          "problem": "Continuar a estender um sistema .NET Framework 4 com dez anos do qual 8M+ cidadãos dependem, sem partir nada, enquanto entregava novos fluxos de autenticação.",
-          "solution": "Trabalhei o backend todo. Integrações REST/SOAP, fluxos de autenticação, queries em SQL Server e MySQL. Segurança e desempenho não eram negociáveis em nenhuma chamada.",
+          "problem": "Continuar a estender um sistema .NET Framework 4 com dez anos do qual 8M+ cidadãos dependem, enquanto entregava novos fluxos de autenticação.",
+          "solution": "Trabalhei em features novas e na manutenção do código legado. Integrações REST/SOAP, fluxos de autenticação, queries em SQL Server e MySQL. Segurança e desempenho não eram negociáveis em nenhuma chamada.",
           "impact": "Zero regressões em três anos num sistema que 8M+ cidadãos usam todos os dias."
         }
       },
       "sam": {
         "description": "Lead frontend no novo serviço governamental de alteração de morada de Portugal, em substituição de um sistema legado.",
         "category": "Governo",
-        "overview": "Lead frontend no novo <emphasis>serviço de alteração de morada</emphasis> do governo português. O sistema que cada cidadão tem de usar quando muda de casa.",
+        "overview": "Lead frontend no novo <emphasis>serviço de alteração de morada</emphasis> do governo português.",
         "stats": {
           "coverage": {
             "label": "COBERTURA",
@@ -126,13 +126,13 @@
         },
         "caseStudy": {
           "role": "Lead Frontend Developer",
-          "problem": "Substituir um sistema envelhecido por um serviço de alteração de morada moderno e acessível. O backend não estava pronto na fase inicial, por isso o frontend tinha de avançar sozinho.",
+          "problem": "Substituir um sistema legacy por um serviço de alteração de morada moderno e acessível. O backend não estava pronto na fase inicial, por isso o frontend tinha de avançar sozinho.",
           "solution": "Construí o frontend em Next.js 15, TypeScript e Tailwind. Integrei Keycloak SSO. Simulei o backend com Microcks enquanto era construído. Liguei o Design System da ARTE via Storybook. Cheguei a 86% de cobertura de testes com Jest + SonarQube. Configurei o Kubernetes e os pipelines CI/CD.",
-          "impact": "86% de cobertura automática de testes. Quando o responsável de projeto não estava, era eu a coordenar a equipa (4 devs + 2 QA)."
+          "impact": "86% de cobertura automática de testes. Coordenação técnica da equipa (4 devs + 2 QA) em paralelo com o project lead."
         }
       },
       "mavie-decor": {
-        "description": "Landing para um negócio português de decoração de eventos. CMS próprio para que a dona faça a gestão sozinha da galeria, packs, reviews e leads.",
+        "description": "Landing para um negócio português de decoração de eventos. CMS próprio para que a cliente faça a gestão sozinha da galeria, packs, reviews e leads.",
         "category": "Trabalho de cliente",
         "overview": "Landing para um negócio português de decoração de eventos com <emphasis>CMS próprio</emphasis>. Painel admin, uploads de imagem para Vercel Blob, leads a chegar ao WhatsApp com backup em DB.",
         "stats": {
@@ -159,9 +159,9 @@
         },
         "caseStudy": {
           "role": "Designer + Developer Solo",
-          "problem": "Construir uma landing que transforme visitas em mensagens de WhatsApp. A dona precisa de actualizar galeria, pares before/after, packs e reviews sozinha. Sem mexer em código, sem pagar mensalidade de CMS.",
+          "problem": "Construir uma landing que transforme visitas em mensagens de WhatsApp. A cliente precisa de actualizar galeria, pares before/after, packs e reviews sozinha. Sem editar código, sem pagar mensalidade de CMS.",
           "solution": "Landing em Next.js 16 sobre um admin custom. Auth, Vercel Blob para imagens, Drizzle e Neon para o resto. Cinco tabelas: contactos, galeria, before/after, packs, reviews. O lado público tem as secções habituais e um formulário que abre o WhatsApp já preenchido. GSAP e motion para animações, React Compiler na build.",
-          "impact": "Em produção em maviedecor.pt. A dona faz a gestão do site sozinha. Cada lead chega ao WhatsApp e fica guardado em DB."
+          "impact": "Em produção em maviedecor.pt. A cliente faz a gestão do site sozinha. Cada lead chega ao WhatsApp e fica guardado em DB."
         }
       },
       "stay-safe": {
@@ -196,8 +196,8 @@
         "caseStudy": {
           "role": "Desenvolvedor Solo",
           "problem": "Mostrar aos utilizadores onde é arriscado andar, com base no que outros utilizadores sinalizaram.",
-          "solution": "React Native com Google Maps. Qualquer utilizador pode colocar um pin num sítio perigoso. A comunidade vota, falsos positivos saem. Desenhada e construída a solo ao longo de um ano lectivo.",
-          "impact": "Nota final 19/20. Cinco anos depois a escola continua a apontar os alunos para o relatório."
+          "solution": "React Native com Google Maps. Qualquer utilizador pode colocar um pin num sítio perigoso. A comunidade vota, falsos positivos são removidos. Desenhada e construída a solo ao longo de um ano lectivo.",
+          "impact": "Nota final 19/20. Cinco anos depois a escola continua a usar o relatório como referência para os alunos."
         }
       },
       "lucasmigueis-portfolio": {
@@ -228,9 +228,9 @@
         },
         "caseStudy": {
           "role": "Designer + Developer",
-          "problem": "A maioria dos portfólios de developer são links secos ou templates copiados. Quis algo que mostrasse que sei entregar trabalho técnico e cuidar do design, em duas línguas.",
+          "problem": "A maioria dos portfólios de developer são listas estáticas de links ou templates copiados. Quis algo que mostrasse que sei entregar trabalho técnico e cuidar do design, em duas línguas.",
           "solution": "Construído do zero em Next.js 16 com Cache Components. EN + PT-PT completo via next-intl. Tailwind 4 com tokens semânticos, sem valores arbitrários em parte nenhuma. Acessibilidade incorporada. O hero tem um code panel animado, os botões mostram as próprias classes ao passar o rato, a nav destaca a secção que estás a ler.",
-          "impact": "Uma página para onde posso apontar pessoas, que por acaso também usa quase tudo o que é novo no Next.js 16."
+          "impact": "Uma página de referência para partilhar, que também usa quase tudo o que é novo no Next.js 16."
         }
       }
     }

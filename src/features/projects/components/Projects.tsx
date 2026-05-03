@@ -98,16 +98,19 @@ export async function Projects() {
               </LiftCard>
             );
 
-            return project.hasCaseStudy ? (
-              <Link
-                key={project.slug}
-                href={`/projects/${project.slug}`}
-                className="block rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
-              >
-                {card}
-              </Link>
-            ) : (
-              <div key={project.slug}>{card}</div>
+            return (
+              <li key={project.slug}>
+                {project.hasCaseStudy ? (
+                  <Link
+                    href={`/projects/${project.slug}`}
+                    className="block rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
+                  >
+                    {card}
+                  </Link>
+                ) : (
+                  card
+                )}
+              </li>
             );
           })}
         </ul>

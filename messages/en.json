@@ -34,7 +34,7 @@
   "about": {
     "title": "About me",
     "subtitle": "INTRO",
-    "body": "Four years building services for the Portuguese government, used by millions. I work in Next.js, TypeScript, .NET and React Native. I move between code and design, and lead the team technically when there's no one else around to do it.",
+    "body": "Four years building services for the Portuguese government, used by millions. I work in Next.js, TypeScript, .NET and React Native. I move between code and design, and step up to lead the team technically when the work calls for it.",
     "portraitLabel": "portrait · 4:5",
     "portraitAlt": "Photo of {name}",
     "stats": {
@@ -92,15 +92,15 @@
         },
         "caseStudy": {
           "role": "Backend Developer",
-          "problem": "Keep extending a ten-year-old .NET Framework 4 system that 8M+ citizens depend on, without breaking anything, while shipping new auth flows.",
-          "solution": "Worked the full backend. REST/SOAP integrations, auth flows, SQL Server and MySQL queries. Security and performance were non-negotiable on every call.",
+          "problem": "Keep extending a ten-year-old .NET Framework 4 system that 8M+ citizens depend on, while shipping new auth flows.",
+          "solution": "Worked on new features and legacy code maintenance. REST/SOAP integrations, auth flows, SQL Server and MySQL queries. Security and performance were non-negotiable on every call.",
           "impact": "Zero regressions in three years on a system 8M+ citizens use daily."
         }
       },
       "sam": {
         "description": "Frontend lead for Portugal's new government address change service, replacing a legacy system.",
         "category": "Government",
-        "overview": "Lead frontend on the new <emphasis>address change service</emphasis> for the Portuguese government. The system every citizen has to use when they move house.",
+        "overview": "Lead frontend on the new <emphasis>address change service</emphasis> for the Portuguese government. ",
         "stats": {
           "coverage": {
             "label": "TEST COVERAGE",
@@ -128,7 +128,7 @@
           "role": "Lead Frontend Developer",
           "problem": "Replace an aging system with a modern, accessible address change service. The backend wasn't ready during early development, so the frontend had to ship independently.",
           "solution": "Built the frontend in Next.js 15, TypeScript and Tailwind. Integrated Keycloak SSO. Mocked the backend with Microcks while it was being built. Plugged in the ARTE Design System through Storybook. Got to 86% test coverage with Jest + SonarQube. Set up the Kubernetes config and CI/CD pipelines.",
-          "impact": "86% automated test coverage. Stepped in to coordinate the team (4 devs + 2 QA) whenever the project lead wasn't around."
+          "impact": "86% automated test coverage. Technical coordination of the team (4 devs + 2 QA) alongside the project lead."
         }
       },
       "mavie-decor": {
@@ -197,7 +197,7 @@
           "role": "Solo Developer",
           "problem": "Show users where it's risky to walk, based on what other users have flagged.",
           "solution": "React Native with Google Maps. Anyone can drop a pin on a dangerous spot. Other users vote, false positives get removed. Designed and built solo over a school year.",
-          "impact": "19/20 final grade. Five years later the school still points students at the report."
+          "impact": "19/20 final grade. Five years later the school still uses the report as a reference for students."
         }
       },
       "lucasmigueis-portfolio": {
@@ -228,9 +228,9 @@
         },
         "caseStudy": {
           "role": "Designer + Developer",
-          "problem": "Most dev portfolios are either link dumps or template clones. I wanted something that shows I can ship technical work and design well, in two languages.",
+          "problem": "Most dev portfolios are either static link lists or template clones. I wanted something that shows I can ship technical work and design well, in two languages.",
           "solution": "Built from zero on Next.js 16 with Cache Components. Full EN + PT-PT through next-intl. Tailwind 4 with semantic tokens, no arbitrary values anywhere. Accessibility baked in. The hero has an animated code panel, the buttons show their own classes on hover, the nav highlights the section you're reading.",
-          "impact": "A surface I can point people at, that also happens to exercise most of what's new in Next.js 16."
+          "impact": "A reference page to share, that also exercises most of what's new in Next.js 16."
         }
       }
     }
