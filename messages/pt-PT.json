@@ -1,0 +1,309 @@
+{
+  "common": {
+    "tryAgain": "Tentar novamente",
+    "somethingWrong": "Algo correu mal",
+    "loading": "A carregar…",
+    "notFoundTitle": "Página não encontrada",
+    "notFoundDescription": "Esta página não existe. Talvez nunca tenha existido.",
+    "notFoundHint": "Experimenta uma destas:",
+    "backHome": "Voltar ao início",
+    "skipToContent": "Saltar para o conteúdo",
+    "toggleTheme": "Alternar tema",
+    "switchLanguage": "Mudar idioma"
+  },
+  "nav": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "skills": "Competências",
+    "experience": "Experiência",
+    "contact": "Contacto",
+    "whatNow": "o que estou a fazer agora?"
+  },
+  "hero": {
+    "role": "Desenvolvedor Full Stack",
+    "tagline": "Faço o software que o governo português corre em produção.",
+    "statusAvailable": "Disponível para novas oportunidades",
+    "ctaProjects": "Ver projetos",
+    "ctaContact": "Entrar em contacto",
+    "ctaResume": "Descarregar CV",
+    "resumeAriaLabel": "Descarregar CV de {name} (PDF)",
+    "codeGreeting": "olá, sou o",
+    "classTipHint": "↑ Passa o rato para ver as classes Tailwind",
+    "codePanelLabel": "Pré-visualização de código decorativa"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "subtitle": "INTRO",
+    "body": "Quatro anos a construir serviços para o governo português, usados por milhões de pessoas. Trabalho em Next.js, TypeScript, .NET e React Native. Movo-me entre código e design, e lidero a equipa tecnicamente quando não há mais ninguém para o fazer.",
+    "portraitLabel": "retrato · 4:5",
+    "portraitAlt": "Foto de {name}",
+    "stats": {
+      "yearsLabel": "Anos",
+      "usersLabel": "Utilizadores",
+      "basedLabel": "Local"
+    },
+    "languagesLabel": "Idiomas"
+  },
+  "projects": {
+    "title": "Projetos selecionados",
+    "itemsCount": "{count} ITENS",
+    "previewLabel": "preview",
+    "noPreview": "Sem pré-visualização disponível",
+    "viewLive": "Ver online",
+    "viewSource": "Ver código",
+    "readMore": "Ver case study",
+    "backToHome": "Voltar ao portfólio",
+    "caseStudyLabel": "CASE STUDY",
+    "overviewLabel": "OVERVIEW",
+    "yearsSpan": "{count} anos",
+    "caseStudy": {
+      "role": "Função",
+      "problem": "Problema",
+      "solution": "Solução",
+      "impact": "Impacto"
+    },
+    "items": {
+      "chave-movel-digital": {
+        "description": "Backend no serviço nacional de autenticação digital de Portugal, usado por mais de 8M de cidadãos.",
+        "category": "Governo",
+        "overview": "Backend no serviço nacional de autenticação digital de Portugal. <emphasis>8M+ cidadãos</emphasis> entram por aqui para chegar a qualquer serviço público do país.",
+        "stats": {
+          "users": {
+            "label": "UTILIZADORES",
+            "value": "8M+",
+            "description": "Cidadãos a autenticar diariamente em produção."
+          },
+          "codebaseAge": {
+            "label": "IDADE DO CÓDIGO",
+            "value": "10",
+            "unit": "anos",
+            "description": "Sistema .NET Framework 4 legado, estendido sem reescrita."
+          },
+          "regressions": {
+            "label": "REGRESSÕES",
+            "value": "0",
+            "description": "Em mais de 3 anos de funcionalidades e migrações."
+          },
+          "integrations": {
+            "label": "INTEGRAÇÕES",
+            "value": "12",
+            "description": "Serviços REST + SOAP, SSO e camadas de dados gov."
+          }
+        },
+        "caseStudy": {
+          "role": "Desenvolvedor Backend",
+          "problem": "Continuar a estender um sistema .NET Framework 4 com dez anos do qual 8M+ cidadãos dependem, sem partir nada, enquanto entregava novos fluxos de autenticação.",
+          "solution": "Trabalhei o backend todo. Integrações REST/SOAP, fluxos de autenticação, queries em SQL Server e MySQL. Segurança e desempenho não eram negociáveis em nenhuma chamada.",
+          "impact": "Zero regressões em três anos num sistema que 8M+ cidadãos usam todos os dias."
+        }
+      },
+      "sam": {
+        "description": "Lead frontend no novo serviço governamental de alteração de morada de Portugal, em substituição de um sistema legado.",
+        "category": "Governo",
+        "overview": "Lead frontend no novo <emphasis>serviço de alteração de morada</emphasis> do governo português. O sistema que cada cidadão tem de usar quando muda de casa.",
+        "stats": {
+          "coverage": {
+            "label": "COBERTURA",
+            "value": "86",
+            "unit": "%",
+            "description": "Cobertura automática com Jest + SonarQube."
+          },
+          "team": {
+            "label": "EQUIPA",
+            "value": "4+2",
+            "description": "Devs e QA, coordenados na ausência do lead."
+          },
+          "stack": {
+            "label": "STACK",
+            "value": "Next 15",
+            "description": "TypeScript, Tailwind, Microcks, Storybook, Keycloak."
+          },
+          "envs": {
+            "label": "AMBIENTES",
+            "value": "3",
+            "description": "Dev, staging e produção via Kubernetes."
+          }
+        },
+        "caseStudy": {
+          "role": "Lead Frontend Developer",
+          "problem": "Substituir um sistema envelhecido por um serviço de alteração de morada moderno e acessível. O backend não estava pronto na fase inicial, por isso o frontend tinha de avançar sozinho.",
+          "solution": "Construí o frontend em Next.js 15, TypeScript e Tailwind. Integrei Keycloak SSO. Simulei o backend com Microcks enquanto era construído. Liguei o Design System da ARTE via Storybook. Cheguei a 86% de cobertura de testes com Jest + SonarQube. Configurei o Kubernetes e os pipelines CI/CD.",
+          "impact": "86% de cobertura automática de testes. Quando o responsável de projeto não estava, era eu a coordenar a equipa (4 devs + 2 QA)."
+        }
+      },
+      "mavie-decor": {
+        "description": "Landing para um negócio português de decoração de eventos. CMS próprio para que a dona faça a gestão sozinha da galeria, packs, reviews e leads.",
+        "category": "Trabalho de cliente",
+        "overview": "Landing para um negócio português de decoração de eventos com <emphasis>CMS próprio</emphasis>. Painel admin, uploads de imagem para Vercel Blob, leads a chegar ao WhatsApp com backup em DB.",
+        "stats": {
+          "lighthouse": {
+            "label": "LIGHTHOUSE",
+            "value": "100",
+            "description": "Pontuações de performance, acessibilidade e SEO."
+          },
+          "tables": {
+            "label": "TABELAS",
+            "value": "5",
+            "description": "Contactos, galeria, before/after, packs e reviews."
+          },
+          "admin": {
+            "label": "ADMIN",
+            "value": "Custom",
+            "description": "Painel CMS completo com auth e uploads via Vercel Blob."
+          },
+          "channel": {
+            "label": "CANAL",
+            "value": "WhatsApp",
+            "description": "Redirect directo para WhatsApp com backup em DB de cada submissão."
+          }
+        },
+        "caseStudy": {
+          "role": "Designer + Developer Solo",
+          "problem": "Construir uma landing que transforme visitas em mensagens de WhatsApp. A dona precisa de actualizar galeria, pares before/after, packs e reviews sozinha. Sem mexer em código, sem pagar mensalidade de CMS.",
+          "solution": "Landing em Next.js 16 sobre um admin custom. Auth, Vercel Blob para imagens, Drizzle e Neon para o resto. Cinco tabelas: contactos, galeria, before/after, packs, reviews. O lado público tem as secções habituais e um formulário que abre o WhatsApp já preenchido. GSAP e motion para animações, React Compiler na build.",
+          "impact": "Em produção em maviedecor.pt. A dona faz a gestão do site sozinha. Cada lead chega ao WhatsApp e fica guardado em DB."
+        }
+      },
+      "stay-safe": {
+        "description": "App móvel de segurança para identificar rotas perigosas através de pins comunitários no mapa.",
+        "category": "Mobile",
+        "overview": "App móvel para sinalizar zonas perigosas num mapa, com <emphasis>pins comunitários</emphasis> que os utilizadores podem votar. Projecto académico de final de curso. A escola ainda usa o relatório como referência.",
+        "stats": {
+          "grade": {
+            "label": "NOTA",
+            "value": "19",
+            "unit": "/20",
+            "description": "Nota final no projecto académico."
+          },
+          "duration": {
+            "label": "DURAÇÃO",
+            "value": "1",
+            "unit": "ano",
+            "description": "Construção a solo ao longo de um ano lectivo."
+          },
+          "scope": {
+            "label": "ÂMBITO",
+            "value": "Solo",
+            "description": "Design, código e relatório end-to-end."
+          },
+          "legacy": {
+            "label": "LEGADO",
+            "value": "5",
+            "unit": "anos",
+            "description": "Relatório técnico ainda usado como referência na escola."
+          }
+        },
+        "caseStudy": {
+          "role": "Desenvolvedor Solo",
+          "problem": "Mostrar aos utilizadores onde é arriscado andar, com base no que outros utilizadores sinalizaram.",
+          "solution": "React Native com Google Maps. Qualquer utilizador pode colocar um pin num sítio perigoso. A comunidade vota, falsos positivos saem. Desenhada e construída a solo ao longo de um ano lectivo.",
+          "impact": "Nota final 19/20. Cinco anos depois a escola continua a apontar os alunos para o relatório."
+        }
+      },
+      "lucasmigueis-portfolio": {
+        "description": "Portfólio pessoal em Next.js 16. Bilingue, com design system próprio e alguns detalhes interactivos.",
+        "category": "Pessoal",
+        "overview": "Portfólio pessoal em Next.js 16, totalmente bilingue (<emphasis>EN + PT</emphasis>). Design tokens próprios em Tailwind 4 e alguns pequenos detalhes interactivos.",
+        "stats": {
+          "locales": {
+            "label": "IDIOMAS",
+            "value": "2",
+            "description": "EN · PT-PT, cobertura completa incluindo case studies."
+          },
+          "lighthouse": {
+            "label": "LIGHTHOUSE",
+            "value": "100",
+            "description": "Pontuação máxima em performance, acessibilidade e SEO."
+          },
+          "tokens": {
+            "label": "TOKENS",
+            "value": "30+",
+            "description": "Tokens semânticos de cor e tipografia, zero valores arbitrários no Tailwind."
+          },
+          "deps": {
+            "label": "DEPS",
+            "value": "11",
+            "description": "Footprint de dependências enxuto, cada package justificado."
+          }
+        },
+        "caseStudy": {
+          "role": "Designer + Developer",
+          "problem": "A maioria dos portfólios de developer são links secos ou templates copiados. Quis algo que mostrasse que sei entregar trabalho técnico e cuidar do design, em duas línguas.",
+          "solution": "Construído do zero em Next.js 16 com Cache Components. EN + PT-PT completo via next-intl. Tailwind 4 com tokens semânticos, sem valores arbitrários em parte nenhuma. Acessibilidade incorporada. O hero tem um code panel animado, os botões mostram as próprias classes ao passar o rato, a nav destaca a secção que estás a ler.",
+          "impact": "Uma página para onde posso apontar pessoas, que por acaso também usa quase tudo o que é novo no Next.js 16."
+        }
+      }
+    }
+  },
+  "github": {
+    "title": "Atividade no GitHub",
+    "subtitle": "ACTIVITY",
+    "description": "Contribuições recentes no GitHub.",
+    "viewProfile": "Ver perfil completo",
+    "graphAlt": "Gráfico de contribuições de {username}"
+  },
+  "now": {
+    "title": "Agora",
+    "subtitle": "FOCO",
+    "description": "No que estou a trabalhar e a pensar neste momento.",
+    "lastUpdated": "Atualizado em",
+    "items": {
+      "working-on": {
+        "category": "A trabalhar em",
+        "body": "Lead frontend no novo serviço governamental de alteração de morada (SAM) na Glintt Global."
+      },
+      "building": {
+        "category": "A construir",
+        "body": "Este portfólio em Next.js 16 a explorar Cache Components e a nova biblioteca motion."
+      },
+      "open-to": {
+        "category": "Disponível para",
+        "body": "Conversas sobre trabalho de produto a sério. Freelance, full-time, ou algures pelo meio."
+      }
+    }
+  },
+  "footer": {
+    "now": "Agora",
+    "viewSource": "Código"
+  },
+  "skills": {
+    "title": "Competências",
+    "subtitle": "STACK",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "data": "Data",
+      "infra": "Infra",
+      "tools": "Ferramentas & IA"
+    }
+  },
+  "experience": {
+    "title": "Experiência",
+    "subtitle": "TIMELINE",
+    "present": "agora",
+    "items": {
+      "glintt-fs": {
+        "role": "Desenvolvedor Full Stack",
+        "location": "Lisboa",
+        "description": "Lead frontend no novo serviço governamental de alteração de morada (SAM). Next.js 15, acessibilidade, Kubernetes, 86% de cobertura de testes."
+      },
+      "glintt-net": {
+        "role": "Desenvolvedor de Software · .NET",
+        "location": "Lisboa",
+        "description": "Backend na Chave Móvel Digital, autenticação nacional de Portugal, usada por 8M+ cidadãos. .NET 4 legado, REST/SOAP."
+      },
+      "thinkfuture": {
+        "role": "Desenvolvedor Mobile · Estágio",
+        "location": "Entroncamento",
+        "description": "Desenvolvi uma app interna de gestão de colaboradores em React Native, end-to-end. Convertia protótipos Figma da equipa UI/UX em ecrãs funcionais."
+      }
+    }
+  },
+  "contact": {
+    "title": "Vamos falar",
+    "description": "Disponível para freelance, posições full-time e colaborações pontuais.",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub"
+  }
+}

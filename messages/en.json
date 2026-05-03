@@ -1,0 +1,309 @@
+{
+  "common": {
+    "tryAgain": "Try again",
+    "somethingWrong": "Something went wrong",
+    "loading": "Loading…",
+    "notFoundTitle": "Page not found",
+    "notFoundDescription": "This page doesn't exist. Maybe it never did.",
+    "notFoundHint": "Try one of these instead:",
+    "backHome": "Back to home",
+    "skipToContent": "Skip to content",
+    "toggleTheme": "Toggle theme",
+    "switchLanguage": "Switch language"
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact",
+    "whatNow": "what am i doing now?"
+  },
+  "hero": {
+    "role": "Full Stack Developer",
+    "tagline": "I build software the Portuguese government runs on.",
+    "statusAvailable": "Available for new opportunities",
+    "ctaProjects": "See my work",
+    "ctaContact": "Get in touch",
+    "ctaResume": "Download CV",
+    "resumeAriaLabel": "Download {name}'s CV (PDF)",
+    "codeGreeting": "hi, I'm",
+    "classTipHint": "↑ Hover the elements to see the Tailwind classes",
+    "codePanelLabel": "Decorative code preview"
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "INTRO",
+    "body": "Four years building services for the Portuguese government, used by millions. I work in Next.js, TypeScript, .NET and React Native. I move between code and design, and lead the team technically when there's no one else around to do it.",
+    "portraitLabel": "portrait · 4:5",
+    "portraitAlt": "Photo of {name}",
+    "stats": {
+      "yearsLabel": "Years",
+      "usersLabel": "Users",
+      "basedLabel": "Based"
+    },
+    "languagesLabel": "Languages"
+  },
+  "projects": {
+    "title": "Selected projects",
+    "itemsCount": "{count} ITEMS",
+    "previewLabel": "preview",
+    "noPreview": "No preview available",
+    "viewLive": "View live",
+    "viewSource": "View source",
+    "readMore": "Read case study",
+    "backToHome": "Back to portfolio",
+    "caseStudyLabel": "CASE STUDY",
+    "overviewLabel": "OVERVIEW",
+    "yearsSpan": "{count} yrs",
+    "caseStudy": {
+      "role": "Role",
+      "problem": "Problem",
+      "solution": "Solution",
+      "impact": "Impact"
+    },
+    "items": {
+      "chave-movel-digital": {
+        "description": "Backend on Portugal's national digital authentication service used by 8M+ citizens.",
+        "category": "Government",
+        "overview": "Backend on Portugal's national authentication service. <emphasis>8M+ citizens</emphasis> sign in through it to reach every public service in the country.",
+        "stats": {
+          "users": {
+            "label": "USERS",
+            "value": "8M+",
+            "description": "Citizens authenticating in production daily."
+          },
+          "codebaseAge": {
+            "label": "CODEBASE AGE",
+            "value": "10",
+            "unit": "yrs",
+            "description": "Legacy .NET Framework 4 system extended without rewrite."
+          },
+          "regressions": {
+            "label": "REGRESSIONS",
+            "value": "0",
+            "description": "Across 3+ years of feature work and migrations."
+          },
+          "integrations": {
+            "label": "INTEGRATIONS",
+            "value": "12",
+            "description": "REST + SOAP services, SSO and gov data layers."
+          }
+        },
+        "caseStudy": {
+          "role": "Backend Developer",
+          "problem": "Keep extending a ten-year-old .NET Framework 4 system that 8M+ citizens depend on, without breaking anything, while shipping new auth flows.",
+          "solution": "Worked the full backend. REST/SOAP integrations, auth flows, SQL Server and MySQL queries. Security and performance were non-negotiable on every call.",
+          "impact": "Zero regressions in three years on a system 8M+ citizens use daily."
+        }
+      },
+      "sam": {
+        "description": "Frontend lead for Portugal's new government address change service, replacing a legacy system.",
+        "category": "Government",
+        "overview": "Lead frontend on the new <emphasis>address change service</emphasis> for the Portuguese government. The system every citizen has to use when they move house.",
+        "stats": {
+          "coverage": {
+            "label": "TEST COVERAGE",
+            "value": "86",
+            "unit": "%",
+            "description": "Automated coverage with Jest + SonarQube."
+          },
+          "team": {
+            "label": "TEAM",
+            "value": "4+2",
+            "description": "Devs and QA, coordinated when lead absent."
+          },
+          "stack": {
+            "label": "STACK",
+            "value": "Next 15",
+            "description": "TypeScript, Tailwind, Microcks, Storybook, Keycloak"
+          },
+          "envs": {
+            "label": "ENVIRONMENTS",
+            "value": "3",
+            "description": "Dev, staging and production via Kubernetes."
+          }
+        },
+        "caseStudy": {
+          "role": "Lead Frontend Developer",
+          "problem": "Replace an aging system with a modern, accessible address change service. The backend wasn't ready during early development, so the frontend had to ship independently.",
+          "solution": "Built the frontend in Next.js 15, TypeScript and Tailwind. Integrated Keycloak SSO. Mocked the backend with Microcks while it was being built. Plugged in the ARTE Design System through Storybook. Got to 86% test coverage with Jest + SonarQube. Set up the Kubernetes config and CI/CD pipelines.",
+          "impact": "86% automated test coverage. Stepped in to coordinate the team (4 devs + 2 QA) whenever the project lead wasn't around."
+        }
+      },
+      "mavie-decor": {
+        "description": "Landing for a Portuguese event decoration business. Custom CMS so the owner manages the gallery, packs, reviews and leads herself.",
+        "category": "Client work",
+        "overview": "Landing for a Portuguese event decoration business with a <emphasis>custom CMS</emphasis>. Admin panel, image uploads to Vercel Blob, leads going to WhatsApp with a DB backup.",
+        "stats": {
+          "lighthouse": {
+            "label": "LIGHTHOUSE",
+            "value": "100",
+            "description": "Performance, accessibility and SEO scores."
+          },
+          "tables": {
+            "label": "DB TABLES",
+            "value": "5",
+            "description": "Contacts, gallery, before/after, packs and reviews."
+          },
+          "admin": {
+            "label": "ADMIN",
+            "value": "Custom",
+            "description": "Full CMS panel with auth and Vercel Blob uploads."
+          },
+          "channel": {
+            "label": "LEAD CHANNEL",
+            "value": "WhatsApp",
+            "description": "Direct WhatsApp redirect with DB backup of every submission."
+          }
+        },
+        "caseStudy": {
+          "role": "Solo Designer + Developer",
+          "problem": "Build a landing that turns visitors into WhatsApp messages. The owner needs to update gallery, before/after pairs, packs and reviews on her own. No code, no monthly CMS fee.",
+          "solution": "Next.js 16 landing on top of a custom admin. Auth, Vercel Blob for images, Drizzle and Neon for everything else. Five tables: contacts, gallery, before/after, packs, reviews. The public side has the usual sections plus a contact form that opens WhatsApp prefilled. GSAP and motion for animations, React Compiler in the build.",
+          "impact": "Live at maviedecor.pt. The owner runs the site herself. Every lead reaches WhatsApp and gets stored in the DB."
+        }
+      },
+      "stay-safe": {
+        "description": "Mobile safety app to identify dangerous routes via community-flagged map pins.",
+        "category": "Mobile",
+        "overview": "Mobile app to flag dangerous spots on a map, using <emphasis>community pins</emphasis> users could vote on. Final-year academic project. The school still uses the report.",
+        "stats": {
+          "grade": {
+            "label": "GRADE",
+            "value": "19",
+            "unit": "/20",
+            "description": "Final academic mark on the project."
+          },
+          "duration": {
+            "label": "DURATION",
+            "value": "1",
+            "unit": "yr",
+            "description": "Solo build over a full school year."
+          },
+          "scope": {
+            "label": "SCOPE",
+            "value": "Solo",
+            "description": "Design, code and report end-to-end."
+          },
+          "legacy": {
+            "label": "LEGACY",
+            "value": "5",
+            "unit": "yrs",
+            "description": "Technical report still used as school reference."
+          }
+        },
+        "caseStudy": {
+          "role": "Solo Developer",
+          "problem": "Show users where it's risky to walk, based on what other users have flagged.",
+          "solution": "React Native with Google Maps. Anyone can drop a pin on a dangerous spot. Other users vote, false positives get removed. Designed and built solo over a school year.",
+          "impact": "19/20 final grade. Five years later the school still points students at the report."
+        }
+      },
+      "lucasmigueis-portfolio": {
+        "description": "Personal portfolio in Next.js 16. Bilingual, with a custom design system and a handful of interactive details.",
+        "category": "Personal",
+        "overview": "Personal portfolio in Next.js 16, fully bilingual (<emphasis>EN + PT</emphasis>). Custom design tokens in Tailwind 4 and a few small interactive details.",
+        "stats": {
+          "locales": {
+            "label": "LOCALES",
+            "value": "2",
+            "description": "EN · PT-PT, full content coverage including case studies."
+          },
+          "lighthouse": {
+            "label": "LIGHTHOUSE",
+            "value": "100",
+            "description": "Perfect score across performance, a11y, and SEO."
+          },
+          "tokens": {
+            "label": "TOKENS",
+            "value": "30+",
+            "description": "Semantic color and typography tokens, zero arbitrary Tailwind values."
+          },
+          "deps": {
+            "label": "DEPS",
+            "value": "11",
+            "description": "Lean dependency footprint, every package justified."
+          }
+        },
+        "caseStudy": {
+          "role": "Designer + Developer",
+          "problem": "Most dev portfolios are either link dumps or template clones. I wanted something that shows I can ship technical work and design well, in two languages.",
+          "solution": "Built from zero on Next.js 16 with Cache Components. Full EN + PT-PT through next-intl. Tailwind 4 with semantic tokens, no arbitrary values anywhere. Accessibility baked in. The hero has an animated code panel, the buttons show their own classes on hover, the nav highlights the section you're reading.",
+          "impact": "A surface I can point people at, that also happens to exercise most of what's new in Next.js 16."
+        }
+      }
+    }
+  },
+  "github": {
+    "title": "GitHub activity",
+    "subtitle": "ACTIVITY",
+    "description": "Recent contributions on GitHub.",
+    "viewProfile": "View full profile",
+    "graphAlt": "Contribution graph for {username}"
+  },
+  "now": {
+    "title": "Now",
+    "subtitle": "FOCUS",
+    "description": "What I'm working on and thinking about right now.",
+    "lastUpdated": "Last updated",
+    "items": {
+      "working-on": {
+        "category": "Working on",
+        "body": "Frontend lead on Portugal's new Government address change service (SAM) at Glintt Global."
+      },
+      "building": {
+        "category": "Building",
+        "body": "This portfolio in Next.js 16 exploring Cache Components and the new motion library."
+      },
+      "open-to": {
+        "category": "Open to",
+        "body": "Talking to people about real product work. Freelance, full-time, or somewhere in between."
+      }
+    }
+  },
+  "footer": {
+    "now": "Now",
+    "viewSource": "Source"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "STACK",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "data": "Data",
+      "infra": "Infra",
+      "tools": "Tools & AI"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "TIMELINE",
+    "present": "now",
+    "items": {
+      "glintt-fs": {
+        "role": "Full Stack Developer",
+        "location": "Lisbon",
+        "description": "Frontend lead for Portugal's new address change service (SAM). Next.js 15, accessibility, Kubernetes, 86% test coverage."
+      },
+      "glintt-net": {
+        "role": "Software Developer · .NET",
+        "location": "Lisbon",
+        "description": "Backend on Chave Móvel Digital, Portugal's national auth, used by 8M+ citizens. Legacy .NET 4, REST/SOAP."
+      },
+      "thinkfuture": {
+        "role": "Mobile Developer · Internship",
+        "location": "Entroncamento",
+        "description": "Built an internal employee management app in React Native, end-to-end. Turned Figma prototypes from the UI/UX team into working screens."
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's talk",
+    "description": "Open to freelance, full-time roles and side collaborations.",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub"
+  }
+}
