@@ -1,4 +1,5 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 import { Download } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
 import { HeroStagger, HeroStaggerItem } from "@/components/motion/hero-stagger";
@@ -13,10 +14,12 @@ const CTA_SECONDARY_CLASSES =
   "border-border text-foreground inline-flex min-h-11 items-center rounded-md border px-5 font-medium";
 const CTA_GHOST_CLASSES =
   "text-muted-foreground hover:text-foreground inline-flex min-h-11 items-center gap-2 rounded-md px-3 font-medium";
-const HEADING_CLASSES = "text-hero-name font-bold leading-none tracking-tight";
+const HEADING_CLASSES =
+  "text-hero-name font-semibold leading-none tracking-tight";
 
 export async function Hero() {
-  const t = await getTranslations("hero");
+  const [t, locale] = await Promise.all([getTranslations("hero"), getLocale()]);
+  const cvPath = siteConfig.cvPaths[locale as (typeof routing.locales)[number]];
 
   return (
     <section
@@ -53,7 +56,9 @@ export async function Hero() {
           </HeroStaggerItem>
 
           <HeroStaggerItem className="flex flex-wrap items-center gap-3">
-            <p className="text-muted-foreground text-lg sm:text-xl">{t("role")}</p>
+            <p className="text-muted-foreground text-lg sm:text-xl">
+              {t("role")}
+            </p>
             <span className="border-border text-syntax-tag inline-flex items-center rounded-md border px-2 py-0.5 font-mono text-xs">
               v4.2
             </span>
@@ -84,7 +89,7 @@ export async function Hero() {
             </ClassTip>
             <ClassTip classes={CTA_GHOST_CLASSES}>
               <a
-                href={siteConfig.cvPath}
+                href={cvPath}
                 download
                 aria-label={t("resumeAriaLabel", { name: siteConfig.name })}
                 className={`${CTA_GHOST_CLASSES} transition-colors motion-reduce:transition-none`}
