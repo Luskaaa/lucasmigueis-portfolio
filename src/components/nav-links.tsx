@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { cn } from "@/lib/cn";
 
 export type NavItem = {
@@ -14,9 +14,11 @@ export function NavLinks({ items }: { items: ReadonlyArray<NavItem> }) {
   const [activeId, setActiveId] = useState<string | null>(null);
 
   useEffect(() => {
-    const sections = items
-      .map((item) => document.getElementById(item.sectionId))
-      .filter((el): el is HTMLElement => el !== null);
+    const sections: HTMLElement[] = [];
+    for (const item of items) {
+      const el = document.getElementById(item.sectionId);
+      if (el !== null) sections.push(el);
+    }
     if (sections.length === 0) return;
 
     const visible = new Set<string>();
@@ -61,7 +63,7 @@ export function NavLinks({ items }: { items: ReadonlyArray<NavItem> }) {
             >
               {item.label}
               {isActive ? (
-                <motion.span
+                <m.span
                   layoutId="active-nav-underline"
                   className="bg-foreground absolute -bottom-0.5 left-0 right-0 h-0.5 rounded-full"
                   transition={{ duration: 0.3, ease: "easeOut" }}

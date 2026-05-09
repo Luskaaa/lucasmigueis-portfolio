@@ -25,7 +25,7 @@ export async function Contact() {
         </p>
         <h2
           id="contact-title"
-          className="text-hero-name mt-6 font-bold leading-none tracking-tight"
+          className="text-hero-name mt-6 font-semibold leading-none tracking-tight"
         >
           {title}
           <span className="text-syntax-tag">.</span>

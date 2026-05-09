@@ -17,7 +17,7 @@ export async function Skills() {
           <p className="text-syntax-tag font-mono text-sm">03.</p>
           <h2
             id="skills-title"
-            className="mt-1 text-3xl font-bold tracking-tight sm:text-4xl"
+            className="mt-1 text-3xl font-semibold tracking-tight sm:text-4xl"
           >
             {t("title")}
           </h2>

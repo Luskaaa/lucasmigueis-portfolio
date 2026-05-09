@@ -143,7 +143,7 @@ export default async function ProjectDetailPage({
               <span className="bg-syntax-tag inline-block h-px w-8" aria-hidden />
               {t("caseStudyLabel")} · {indexLabel}
             </p>
-            <h1 className="text-hero-name mt-6 font-bold leading-none tracking-tight">
+            <h1 className="text-hero-name mt-6 font-semibold leading-none tracking-tight">
               {project.name}
             </h1>
             <ul className="text-muted-foreground mt-8 flex flex-wrap gap-x-8 gap-y-2 font-mono text-xs">

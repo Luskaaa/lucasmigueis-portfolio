@@ -9,8 +9,8 @@ export type TokenKind =
   | "plain"
   | "comment";
 
-export type Token = { kind: TokenKind; value: string };
-export type Line = { tokens: Token[] };
+type Token = { kind: TokenKind; value: string };
+type Line = { id: string; tokens: Token[] };
 
 const T = {
   tag: (v: string): Token => ({ kind: "tag", value: v }),
@@ -26,7 +26,7 @@ const T = {
 
 const sp: Token = T.plain(" ");
 
-export const CODE_LINES: ReadonlyArray<Line> = [
+const RAW_LINES: ReadonlyArray<{ tokens: Token[] }> = [
   {
     tokens: [
       T.plain("<"),
@@ -167,3 +167,8 @@ export const CODE_LINES: ReadonlyArray<Line> = [
   { tokens: [T.plain("  </"), T.tag("div"), T.plain(">")] },
   { tokens: [T.plain("</"), T.tag("section"), T.plain(">")] },
 ];
+
+export const CODE_LINES: ReadonlyArray<Line> = RAW_LINES.map((line, i) => ({
+  id: `line-${i + 1}`,
+  tokens: line.tokens,
+}));

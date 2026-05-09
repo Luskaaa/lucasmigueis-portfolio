@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, m } from "motion/react";
 import { Moon, Sun } from "lucide-react";
 
 export function ThemeToggle() {
@@ -19,7 +19,7 @@ export function ThemeToggle() {
   const iconKey = mounted ? (isDark ? "sun" : "moon") : "placeholder";
 
   return (
-    <motion.button
+    <m.button
       type="button"
       aria-label={t("toggleTheme")}
       onClick={() => setTheme(isDark ? "light" : "dark")}
@@ -28,11 +28,11 @@ export function ThemeToggle() {
       className="border-border hover:bg-accent relative inline-flex size-10 items-center justify-center overflow-hidden rounded-md border motion-reduce:transition-none"
     >
       <AnimatePresence mode="wait" initial={false}>
-        <motion.span
+        <m.span
           key={iconKey}
-          initial={{ rotate: -90, scale: 0, opacity: 0 }}
+          initial={{ rotate: -90, scale: 0.95, opacity: 0 }}
           animate={{ rotate: 0, scale: 1, opacity: 1 }}
-          exit={{ rotate: 90, scale: 0, opacity: 0 }}
+          exit={{ rotate: 90, scale: 0.95, opacity: 0 }}
           transition={{ duration: 0.2, ease: "easeOut" }}
           className="inline-flex"
         >
@@ -41,8 +41,8 @@ export function ThemeToggle() {
           ) : (
             <Moon className="size-4" aria-hidden />
           )}
-        </motion.span>
+        </m.span>
       </AnimatePresence>
-    </motion.button>
+    </m.button>
   );
 }

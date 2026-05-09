@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "motion/react";
+import { m, useReducedMotion } from "motion/react";
 import { useEffect, useState } from "react";
 import { CODE_LINES, type TokenKind } from "./code-lines";
 
@@ -26,42 +26,42 @@ export function CodePanel() {
         <span className="text-syntax-tag font-mono text-xs">◆ Hero.tsx</span>
         <span className="text-muted-foreground flex items-center gap-2 font-mono text-xs">
           tailwindcss
-          <motion.span
+          <m.span
             className="text-syntax-numeric"
             animate={writing ? { opacity: [1, 0.3, 1] } : { opacity: 0.3 }}
             transition={{ duration: 1.2, repeat: writing ? Infinity : 0 }}
           >
             ●
-          </motion.span>
+          </m.span>
         </span>
       </div>
 
       <div className="grid grid-cols-[2.5rem_1fr] py-3 font-mono text-xs leading-relaxed sm:text-sm">
         <div className="text-muted-foreground pr-3 text-right">
-          {CODE_LINES.map((_, i) => (
-            <div key={i} className={i < shown ? "opacity-100" : "opacity-30"}>
+          {CODE_LINES.map((line, i) => (
+            <div key={line.id} className={i < shown ? "opacity-100" : "opacity-30"}>
               {i + 1}
             </div>
           ))}
         </div>
         <div className="pr-3">
-          {CODE_LINES.slice(0, shown).map((line, i) => (
-            <motion.div
-              key={i}
+          {CODE_LINES.slice(0, shown).map((line) => (
+            <m.div
+              key={line.id}
               initial={{ opacity: 0, y: 4 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.18 }}
               className="whitespace-pre"
             >
               {line.tokens.map((tok, j) => (
-                <span key={j} className={tokenClass(tok.kind)}>
+                <span key={`${line.id}-${j}`} className={tokenClass(tok.kind)}>
                   {tok.value}
                 </span>
               ))}
-            </motion.div>
+            </m.div>
           ))}
           {writing ? (
-            <motion.span
+            <m.span
               className="bg-syntax-numeric inline-block h-4 w-2 align-middle"
               animate={{ opacity: [1, 0] }}
               transition={{ duration: 0.8, repeat: Infinity, ease: "linear" }}

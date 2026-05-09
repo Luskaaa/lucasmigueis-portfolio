@@ -49,7 +49,7 @@ function ColorizedClasses({ classes }: { classes: string }) {
   return (
     <>
       {tokens.map((cls, i) => (
-        <Fragment key={i}>
+        <Fragment key={cls}>
           <span className={classifyToken(cls)}>{cls}</span>
           {i < tokens.length - 1 ? (
             <span className="text-muted-foreground"> </span>
