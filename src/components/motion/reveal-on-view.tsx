@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import type { ReactNode } from "react";
 
 export function RevealOnView({
@@ -13,7 +13,7 @@ export function RevealOnView({
   className?: string;
 }) {
   return (
-    <motion.div
+    <m.div
       initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
@@ -21,6 +21,6 @@ export function RevealOnView({
       className={className}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, type Variants } from "motion/react";
+import { m, type Variants } from "motion/react";
 import type { ReactNode } from "react";
 
 const containerVariants: Variants = {
@@ -27,14 +27,14 @@ export function HeroStagger({
   className?: string;
 }) {
   return (
-    <motion.div
+    <m.div
       variants={containerVariants}
       initial="hidden"
       animate="show"
       className={className}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -46,8 +46,8 @@ export function HeroStaggerItem({
   className?: string;
 }) {
   return (
-    <motion.div variants={itemVariants} className={className}>
+    <m.div variants={itemVariants} className={className}>
       {children}
-    </motion.div>
+    </m.div>
   );
 }

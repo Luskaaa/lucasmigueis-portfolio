@@ -6,8 +6,10 @@ import { LocaleSwitcher } from "./locale-switcher";
 import { NavLinks, type NavItem } from "./nav-links";
 
 export async function SiteHeader() {
-  const t = await getTranslations("nav");
-  const tCommon = await getTranslations("common");
+  const [t, tCommon] = await Promise.all([
+    getTranslations("nav"),
+    getTranslations("common"),
+  ]);
 
   const items: ReadonlyArray<NavItem> = [
     { href: "#about", label: t("about"), sectionId: "about" },

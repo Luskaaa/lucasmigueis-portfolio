@@ -46,9 +46,11 @@ export default async function NowPage({
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
 
-  const t = await getTranslations("now");
-  const tProjects = await getTranslations("projects");
-  const format = await getFormatter();
+  const [t, tProjects, format] = await Promise.all([
+    getTranslations("now"),
+    getTranslations("projects"),
+    getFormatter(),
+  ]);
   const formattedDate = format.dateTime(new Date(nowLastUpdated), { dateStyle: "long" });
 
   return (
@@ -66,7 +68,7 @@ export default async function NowPage({
 
           <header className="mb-10">
             <p className="text-syntax-tag font-mono text-sm">NOW.</p>
-            <h1 className="mt-1 text-3xl font-bold tracking-tight sm:text-4xl">
+            <h1 className="mt-1 text-3xl font-semibold tracking-tight sm:text-4xl">
               {t("title")}
             </h1>
             <p className="text-muted-foreground mt-2 font-mono text-xs uppercase tracking-wider">

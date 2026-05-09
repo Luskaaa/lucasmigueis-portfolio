@@ -2,7 +2,7 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { useTransition } from "react";
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { cn } from "@/lib/cn";
@@ -15,14 +15,14 @@ const localeLabels: Record<(typeof routing.locales)[number], string> = {
 export function LocaleSwitcher() {
   const locale = useLocale();
   const pathname = usePathname();
-  const router = useRouter();
+  const { replace } = useRouter();
   const t = useTranslations("common");
   const [pending, startTransition] = useTransition();
 
   function onChange(next: (typeof routing.locales)[number]) {
     if (next === locale) return;
     startTransition(() => {
-      router.replace(pathname, { locale: next });
+      replace(pathname, { locale: next });
     });
   }
 
@@ -35,7 +35,7 @@ export function LocaleSwitcher() {
       {routing.locales.map((l) => {
         const isActive = l === locale;
         return (
-          <motion.button
+          <m.button
             key={l}
             type="button"
             onClick={() => onChange(l)}
@@ -49,14 +49,14 @@ export function LocaleSwitcher() {
             )}
           >
             {isActive ? (
-              <motion.span
+              <m.span
                 layoutId="locale-active-pill"
                 className="bg-foreground absolute inset-0 rounded-sm"
                 transition={{ type: "spring", stiffness: 400, damping: 30 }}
               />
             ) : null}
             <span className="relative">{localeLabels[l]}</span>
-          </motion.button>
+          </m.button>
         );
       })}
     </div>

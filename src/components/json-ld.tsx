@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { env } from "@/env";
 import { siteConfig } from "@/data/site-config";
 
@@ -14,9 +15,12 @@ export function PersonJsonLd() {
   };
 
   return (
-    <script
+    <Script
+      id="person-jsonld"
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-    />
+      strategy="afterInteractive"
+    >
+      {JSON.stringify(data)}
+    </Script>
   );
 }

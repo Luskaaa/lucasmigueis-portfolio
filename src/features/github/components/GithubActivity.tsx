@@ -23,7 +23,7 @@ export async function GithubActivity() {
           <p className="text-syntax-tag font-mono text-sm">04.</p>
           <h2
             id="github-title"
-            className="mt-1 text-3xl font-bold tracking-tight sm:text-4xl"
+            className="mt-1 text-3xl font-semibold tracking-tight sm:text-4xl"
           >
             {t("title")}
           </h2>

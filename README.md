@@ -1,5 +1,7 @@
 # www.lucasmigueis.com
 
+[![React Doctor](https://www.react.doctor/share/badge?p=lucasmigueis-portfolio&s=98&w=5&f=5)](https://www.react.doctor/share?p=lucasmigueis-portfolio&s=98&w=5&f=5)
+
 My personal site, deployed at [lucasmigueis.com](https://lucasmigueis.com).
 
 The site code lives in `src/features/`. Each section of the page is its own folder. Translations are in `messages/`, theme tokens in `src/app/globals.css`.

@@ -5,7 +5,10 @@ export const siteConfig = {
     "Full Stack Developer building Portuguese government services used by millions.",
   email: "lucasmigueis1311@gmail.com",
   available: true,
-  cvPath: "/Lucas_Migueis_CV.pdf",
+  cvPaths: {
+    en: "/Lucas_Migueis_CV_EN.pdf",
+    "pt-PT": "/Lucas_Migueis_CV.pdf",
+  },
   github: {
     username: "Luskaaa",
   },
@@ -20,5 +23,3 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/lucas-migueis/",
   },
 } as const;
-
-export type SiteConfig = typeof siteConfig;
